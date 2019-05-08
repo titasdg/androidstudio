@@ -214,12 +214,15 @@ public class SearchActivity extends AppCompatActivity {
 
             //this method will be running on UI thread
             pdLoading.dismiss();
-            List<NewEntry> data=new ArrayList<NewEntry>();
+            List<NewEntry> data=new ArrayList<>();
 
             pdLoading.dismiss();
             if(result.equals("no rows")) {
                 Toast.makeText(SearchActivity.this, "No Results found for entered query", Toast.LENGTH_LONG).show();
-
+                recycleKebab = (RecyclerView) findViewById(R.id.kebabList);
+                mAdapter = new AdapterKebabai(SearchActivity.this, data);
+                recycleKebab.setAdapter(mAdapter);
+                recycleKebab.setLayoutManager(new LinearLayoutManager(SearchActivity.this));
             }else{
 
                 try {

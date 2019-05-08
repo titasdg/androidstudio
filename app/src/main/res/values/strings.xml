@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Kebabai</string>
+    <string name="app_title">Kebabai į namus</string>
+
+    <string name="login_username_hint">Prisijungimo vardas</string>
+    <string name="login_password_hint">Slaptažodis</string>
+    <string name="login_register_name">Registracija</string>
+
+    <string name="register_email">Email</string>
+    <string name="submit_registration">Registruotis</string>
+
+    <string name="login_name">Prisijungimas</string>
+
+    <string name="login_invalid_credentials">Blogai įvestas prisijungimo vardas ir/arba slaptažodis</string>
+
+    <string name="search_new_entry">Pridėti nauja yraša</string>
+
+    <string name="entryDatabaseInfo">Please wait, sending to Db.</string>
+    <string name="gettingfromdb">Gaunami duomenys is db</string>
+
+    <string name="newentry_name">Pavadinimas: </string>
+    <string-array name="newentry_names">
+        <item>Meksikietiškas</item>
+        <item>Vegetariškas</item>
+        <item>Stiksai</item>
+    </string-array>
+    <string name="newentry_size">Dydis: </string>
+    <string name="newentry_size_big">Didelis</string>
+    <string name="newentry_size_medium">Vidutinis</string>
+    <string name="newentry_size_small">Mažas</string>
+    <string name="newentry_sauce">Padazas: </string>
+    <string name="newentry_sauce_hot">Aštrus</string>
+    <string name="newentry_sauce_picantic">Pikantiškas</string>
+    <string name="newentry_sauce_garlic">Česnakinis</string>
+    <string name="newentry_sauce_mix">Miksiukas</string>
+    <string name="newentry_type">Mėsa: </string>
+    <string name="newentry_type_pork">Kiauliena</string>
+    <string name="newentry_type_chicken">Vištiena</string>
+    <string name="newentry_type_beef">Jautiena</string>
+    <string name="newentry_price">Kaina: </string>
+    <string name="newentry_submit">Gaminti</string>
+
+</resources>

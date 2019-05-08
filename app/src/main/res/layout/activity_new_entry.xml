@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewEntryActivity"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/newentry_name"
+            android:textSize="25dp"
+           />
+        <Spinner
+            android:id="@+id/newentry_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/newentry_names"
+            android:textSize="20dp"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/newentry_size"
+            android:textSize="25dp"
+            />
+
+            <RadioGroup
+                android:id="@+id/newentry_sizes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <RadioButton
+                    android:id="@+id/newentry_size_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/newentry_size_small"
+                    android:checked="true"
+                    android:textSize="20dp"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/newentry_size_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/newentry_size_medium"
+                    android:textSize="20dp"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/newentry_name_big"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/newentry_size_big"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    />
+
+            </RadioGroup>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/newentry_sauce"
+            android:textSize="25dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <CheckBox
+                android:id="@+id/newentry_sauce_mix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/newentry_sauce_mix"
+                android:textSize="20dp"
+                android:layout_weight="1"/>
+
+            <CheckBox
+                android:id="@+id/newentry_sauce_garlic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/newentry_sauce_garlic"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <CheckBox
+                android:id="@+id/newentry_sauce_hot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/newentry_sauce_hot"
+                android:textSize="20dp"
+                android:layout_weight="1"/>
+
+            <CheckBox
+                android:id="@+id/newentry_sauce_picantic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/newentry_sauce_picantic"
+                android:textSize="20dp"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/newentry_type"
+            android:textSize="25dp"
+            />
+        <RadioGroup
+            android:id="@+id/newentry_types"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/newentry_type_beef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/newentry_type_beef"
+                android:checked="true"
+                android:textSize="20dp"/>
+            <RadioButton
+                android:id="@+id/newentry_type_chicken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/newentry_type_chicken"
+                android:textSize="20dp"/>
+            <RadioButton
+                android:id="@+id/newentry_type_pork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/newentry_type_pork"
+                android:textSize="20dp"
+                />
+
+        </RadioGroup>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/newentry_price"
+            android:textSize="25dp"
+            />
+        <EditText
+            android:id="@+id/newentry_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <Button
+            android:id="@+id/newentry_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/newentry_submit" />
+    </LinearLayout>
+
+
+</ScrollView>
